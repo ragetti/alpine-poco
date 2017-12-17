@@ -1,0 +1,9 @@
+version: '2.2'
+
+services:
+  alpinepoco:
+    build: .
+    image: ragetti/alpine-poco
+
+
+
