@@ -5,7 +5,7 @@ MAINTAINER ragetti
 WORKDIR /app
 
 RUN apk --no-cache --no-progress update && \
-  apk apk --no-cache --no-progress upgrade && \
+  apk --no-cache --no-progress upgrade && \
   apk --no-cache --no-progress --virtual .build-deps add cmake g++ make openssl openssl-dev glib git linux-headers && \
   git clone https://github.com/pocoproject/poco && \
   cd poco && \
