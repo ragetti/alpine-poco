@@ -10,7 +10,6 @@ RUN apk --no-cache --no-progress update && \
   git clone https://github.com/pocoproject/poco && \
   cd poco && \
   ./configure --omit=Data/ODBC,Data/MySQL && \
-  cmake -DENABLE_DATA_MYSQL=OFF -DENABLE_DATA_ODBC=OFF -DENABLE_MONGODB=OFF -DENABLE_ZIP=ON -DENABLE_PAGECOMPILER=ON -DENABLE_PAGECOMPILER_FILE2PAGE=ON && \
   make install && \
   cd .. && \
   rm -r poco && \
